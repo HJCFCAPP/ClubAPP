@@ -3,7 +3,10 @@
 #ifndef _PLAYER_MANAGER_H_
 #define _PLAYER_MANAGER_H_
 
+#include <map>
+
 //«Ú‘±π‹¿Ì
+class Player;
 
 class PlayerManager
 {

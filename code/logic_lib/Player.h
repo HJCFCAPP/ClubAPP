@@ -14,9 +14,14 @@ public:
 	//Î»ÖÃ
 	enum  POSITION
 	{
-		FORWARD = 0,		//Ç°·æ
-		LEFT_WING = 1,		//×ó±ß·æ
-		RIGHT_WING = 2,		//ÓÒ±ß·æ
+		POSITION_NULL = 0,
+
+		FORWARD = 1,		//Ç°·æ
+		LEFT_WING = 2,		//×ó±ß·æ
+		RIGHT_WING = 3,		//ÓÒ±ß·æ
+
+
+		POSITION_MAX = 5
 	};
 
 public:
@@ -24,7 +29,8 @@ public:
 	Player();
 	~Player();
 
-	void setPlayerInfo();
+	void	setUid(int uid);
+	int		getUid();
 
 private:
 	int				mUid;					//ÊÀ½çÎ¨Ò»id
