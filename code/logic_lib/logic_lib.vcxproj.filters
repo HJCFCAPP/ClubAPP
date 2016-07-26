@@ -24,6 +24,12 @@
     <ClCompile Include="PlayerManager.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="Team.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="TeamManager.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h">
@@ -33,6 +39,12 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="macro.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Team.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="TeamManager.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

@@ -133,11 +133,15 @@
   <ItemGroup>
     <ClCompile Include="Player.cpp" />
     <ClCompile Include="PlayerManager.cpp" />
+    <ClCompile Include="Team.cpp" />
+    <ClCompile Include="TeamManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="macro.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayerManager.h" />
+    <ClInclude Include="Team.h" />
+    <ClInclude Include="TeamManager.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
