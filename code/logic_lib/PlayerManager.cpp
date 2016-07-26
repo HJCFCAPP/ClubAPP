@@ -4,6 +4,7 @@
 
 
 PlayerManager::PlayerManager()
+:mCurUid(0)
 {
 
 }
@@ -15,7 +16,17 @@ PlayerManager::~PlayerManager()
 
 Player* PlayerManager::createNewPlayer()
 {
-	return new Player();
+	mCurUid++;
+	Player* existPlayer = this->getPlayerByUid(mCurUid);
+	if (NULL != existPlayer)
+	{
+		return existPlayer;
+	}
+
+	Player* newPlayer = new Player(mCurUid);
+	this->addNewPlayer(mCurUid, newPlayer);
+
+	return newPlayer;
 }
 
 Player* PlayerManager::getPlayerByUid(int uid)
@@ -34,3 +45,8 @@ void PlayerManager::deletePlayerByUid(int uid)
 	mPlayerList.erase(uid);
 }
 
+
+void PlayerManager::addNewPlayer(int uid, Player* player)
+{
+	mPlayerList[uid] = player;
+}

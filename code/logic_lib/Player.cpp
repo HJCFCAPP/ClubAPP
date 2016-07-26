@@ -1,10 +1,10 @@
 #include "Player.h"
 
-Player::Player()
-: mUid(0)
+Player::Player(int uid)
+: mUid(uid)
 , mAge(0)
 , mNumber(0)
-, mPosition(POSITION_NULL)
+, mPosition(PP_NULL)
 {
 
 }
@@ -14,12 +14,43 @@ Player::~Player()
 
 }
 
-void Player::setUid(int uid)
+
+void Player::setName(const std::string& name)
 {
-	mUid = uid;
+	mName = name;
 }
 
-int Player::getUid()
+std::string& Player::getName()
 {
-	return mUid;
+	return mName;
+}
+
+void Player::setAge(int age)
+{
+	mAge = age;
+}
+
+int Player::getAge()
+{
+	return mAge;
+}
+
+void Player::setNumber(int number)
+{
+	mNumber = number;
+}
+
+int Player::getNumber()
+{
+	return mNumber;
+}
+
+void Player::setPosition(PLAYER_POSITION pos)
+{
+	mPosition = pos;
+}
+
+PLAYER_POSITION Player::getPosition()
+{
+	return mPosition;
 }

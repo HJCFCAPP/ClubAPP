@@ -135,6 +135,7 @@
     <ClCompile Include="PlayerManager.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="macro.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="PlayerManager.h" />
   </ItemGroup>

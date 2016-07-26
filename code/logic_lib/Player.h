@@ -3,41 +3,42 @@
 #ifndef _PLAYER_H_
 #define _PLAYER_H_
 
+#include "macro.h"
 #include <string>
 
 //球员信息
 
 class Player
 {
-public:
-
-	//位置
-	enum  POSITION
-	{
-		POSITION_NULL = 0,
-
-		FORWARD = 1,		//前锋
-		LEFT_WING = 2,		//左边锋
-		RIGHT_WING = 3,		//右边锋
-
-
-		POSITION_MAX = 4
-	};
 
 public:
 
-	Player();
+	Player(int uid);
 	~Player();
 
-	void	setUid(int uid);
-	int		getUid();
+	void			setName(const std::string& name);
+	std::string&	getName();
+
+	void			setAge(int age);
+	int				getAge();
+
+	void			setNumber(int number);
+	int				getNumber();
+
+	void			setPosition(PLAYER_POSITION pos);
+	PLAYER_POSITION	getPosition();
 
 private:
-	int				mUid;					//世界唯一id
-	std::string		mName;					//名字
-	int				mAge;					//年龄
-	int				mNumber;				//球员号码
-	POSITION		mPosition;				//场上位置
+	int					mUid;					//世界唯一id
+	std::string			mName;					//名字
+	int					mAge;					//年龄
+	int					mNumber;				//球员号码
+	PLAYER_POSITION		mPosition;				//场上位置
+
+private:
+	Player();
+	Player(const Player&);
+	Player& operator=(const Player&);
 };
 
 #endif	//_PLAYER_H_

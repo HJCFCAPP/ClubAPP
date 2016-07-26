@@ -25,7 +25,13 @@ public:
 	//注销球员
 	void		deletePlayerByUid(int uid);
 
+
+public:
+	void		addNewPlayer(int uid, Player* player);
+
 private:
+
+	int						mCurUid;					//uid 统计
 	std::map<int, Player*>	mPlayerList;
 };
 
