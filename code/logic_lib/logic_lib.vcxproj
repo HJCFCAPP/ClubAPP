@@ -135,6 +135,7 @@
     <ClCompile Include="PlayerManager.cpp" />
     <ClCompile Include="Team.cpp" />
     <ClCompile Include="TeamManager.cpp" />
+    <ClCompile Include="UI_Player.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="macro.h" />
@@ -142,6 +143,7 @@
     <ClInclude Include="PlayerManager.h" />
     <ClInclude Include="Team.h" />
     <ClInclude Include="TeamManager.h" />
+    <ClInclude Include="UI_Player.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

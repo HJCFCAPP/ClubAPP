@@ -30,6 +30,9 @@
     <ClCompile Include="TeamManager.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="UI_Player.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Player.h">
@@ -45,6 +48,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="TeamManager.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="UI_Player.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
