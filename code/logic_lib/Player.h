@@ -21,7 +21,7 @@ public:
 		RIGHT_WING = 3,		//ср╠ъ╥Ф
 
 
-		POSITION_MAX = 5
+		POSITION_MAX = 4
 	};
 
 public:
